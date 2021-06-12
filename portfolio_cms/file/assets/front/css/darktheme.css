@@ -1,0 +1,159 @@
+html,body.darktheme{
+    background-color: #121212!important;
+    color: #ddd !important;
+}
+.darktheme #services .item p{
+    color: #ddd !important;
+}
+
+.about-box .about-content,
+#eduandex .education-list .single-education,
+.darktheme .mybtn:after,
+.darktheme .counterArea .counter_box,
+.skill-area-line .skill-box,
+.darktheme #interests .interest_box,
+.darktheme #services .item,
+.darktheme .progress-circle div span,
+.darktheme .card,
+.darktheme .pricing-palden .pricing-item,
+.single-review .main-content,
+.darktheme .faq-box,
+.darktheme .single-accordion .accordion-header,
+.darktheme .video-box,
+.darktheme .blogs .blog-box,
+.darktheme .blogs .blog-box .blog-details .post-meta-one,
+.darktheme .myclient-area .owl-carousel .owl-controls .owl-nav .owl-prev, 
+.darktheme .myclient-area .owl-carousel .owl-controls .owl-nav .owl-next,
+.darktheme footer .social-link ul li a,
+.darktheme .header.style,
+.darktheme .contact .single-info,
+.darktheme .home-page-form,
+.darktheme .form-control:focus,
+.darktheme nav.pagination-nav .pagination li a,
+.darktheme nav.pagination-nav .pagination li span, 
+.darktheme nav.pagination-nav .pagination li p,
+.darktheme .portfolio-category li a,
+.darktheme .idgallery,
+.darktheme .slider-img,
+.google_map_wrapper,
+.darktheme .portfolio-details .info,
+.darktheme .aside-contact-form,
+.darktheme .portfolio-details .content,
+.darktheme .blog-aside .serch-form input,
+.darktheme .blog-aside .categori,
+.darktheme .blog-aside .recent-post-widget,
+.darktheme .blog-aside .archives,
+.darktheme .blog-details .blog-content .content,
+.darktheme .discus-comment-box,
+.darktheme #loader-wrapper .loader-section
+{
+    background: #1e1e1e!important;
+}
+
+.darktheme h1, 
+.darktheme h2, 
+.darktheme h3, 
+.darktheme h4, 
+.darktheme h5, 
+.darktheme h6,
+.darktheme .about-area .about-content .info-list li .title,
+.darktheme .blogs .blog-box .blog-details .blog-title,
+.darktheme .header.style .nav-item .nav-link,
+.darktheme nav.pagination-nav .pagination li a,
+.darktheme nav.pagination-nav .pagination li span, 
+.darktheme nav.pagination-nav .pagination li p,
+.darktheme .portfolio-category li a,
+.darktheme .blog-aside .archives .archives-list li a,
+.darktheme .blog-aside .categori .categori-list li a,
+.info.service-category .service-list li .service,
+.pricing-palden .pricing-price
+{
+    color: #fff!important;
+}
+
+
+.darktheme .progress ,
+.darktheme .progress-circle .background,
+.darktheme nav.pagination-nav .page-item:hover .page-link,
+.darktheme .blog-aside .archives .separator,
+.darktheme .blog-aside .recent-post-widget .separator,
+.darktheme .blog-aside .categori .separator,
+.blog-details .blog-content .content .tag-social-link
+{
+    background-color: #313131 !important;
+}
+
+
+
+.darktheme .pricing-palden .deco-layer {
+    fill: #1e1e1e!important;
+}
+#eduandex .title {
+    border-bottom: 1px solid #ffffff26;
+}
+
+
+.darktheme .single-review:hover,
+.darktheme .counterArea .counter_box:hover,
+.darktheme #interests .interest_box:hover,
+.darktheme #services .item:hover,
+.darktheme .pricing-palden .pricing-item:hover,
+.darktheme .contact .single-info:hover,
+.darktheme nav.pagination-nav .pagination li,
+.darktheme nav.pagination-nav .page-item.active .page-link,
+.darktheme nav.pagination-nav .page-item:hover .page-link
+{
+    box-shadow: unset!important;
+}
+
+
+
+.darktheme .form-control,
+.darktheme .portfolio-details .info li,
+.darktheme .info.service-category .service-list li,
+.darktheme .info.service-category .heading,
+.darktheme .aside-contact-form .heading
+{
+    border-bottom: 1px solid #313131;
+}
+.darktheme .idgallery .slider-img .slid-item img {
+    border-left: 2px solid #313131;
+    border-right: 2px solid #313131;
+}
+
+.darktheme .blog-aside .serch-form input,
+.darktheme .blog-aside .categori,
+.darktheme .blog-aside .recent-post-widget,
+.darktheme .blog-aside .archives
+{
+    border: 0px;
+}
+
+.darktheme .blog-aside .serch-form input{
+    color: #fff;
+}
+.darktheme .blog-aside .serch-form input::-moz-placeholder{
+    color: #fff;
+}
+.darktheme .blog-aside .serch-form input::-webkit-placeholder{
+    color: #fff;
+}
+.darktheme .blog-aside .serch-form input::placeholder{
+    color: #fff;
+}
+
+
+.section-title span {
+    color: #f7f7f70a;
+}
+
+.about-box .about-content p,
+.about-box .about-content strong,
+.about-box .about-content h4,
+.about-box .about-content span{
+    color: #ddd !important;
+}
+
+.footer {
+    border-top: 1px solid rgb(255 255 255 / 12%);
+}
