@@ -20,7 +20,7 @@
 
 <div class="login-box">
     <div class="login-logo">
-      <img src="{{ asset('assets/front/img/'.$setting->footer_logo) }}" alt="">
+      <img src="{{ asset('assets/front/img/'.$setting ?? ''->footer_logo) }}" alt="">
     </div>
     <!-- /.login-logo -->
     <div class="card">

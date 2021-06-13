@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Setting;
 use Session;
 use Validator;
+use Auth;
 
 class SettingController extends Controller
 {
@@ -205,7 +206,9 @@ class SettingController extends Controller
    
 	// Home Version Change
 	public function homeversion() {
-		return view('admin.settings.homeversion');
+      $setting = Setting::first();
+      $adminprofile = Auth::user();
+		return view('admin.settings.homeversion',compact('setting','adminprofile'));
 	}
 
 	public function updatehomeversion(Request $request) {

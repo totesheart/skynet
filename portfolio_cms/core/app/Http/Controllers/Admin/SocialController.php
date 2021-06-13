@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Social;
+use App\Setting;
+use Auth;
 use Session;
 
 class SocialController extends Controller
@@ -12,7 +14,10 @@ class SocialController extends Controller
     //  Socila Links
     public function slinks(){
         $slinks = Social::all();
-        return view('admin.settings.social.index', compact('slinks'));
+        $setting = Setting::first();
+      $adminprofile = Auth::user();
+    //  compact('setting','adminprofile')
+        return view('admin.settings.social.index', compact('slinks','setting','adminprofile'));
     }
 
     // Store Social Link

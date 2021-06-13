@@ -26,6 +26,7 @@ use App\Pricing;
 use App\Setting;
 use App\Message;
 
+
 class FrontendController extends Controller
 {
     // Home Page Funtions
@@ -47,20 +48,22 @@ class FrontendController extends Controller
 
         $setting = Setting::first();
 
+        $abouts = About::first();
+
         if($setting->themes == 'default'){
-        return view('front.index', compact('educations', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
+        return view('front.index', compact('educations','abouts','setting', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
         }
 
         if($setting->themes == 'resume'){
-        return view('front.themes.cvresume.index', compact('educations', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
+        return view('front.themes.cvresume.index', compact('educations','abouts', 'setting','experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
         }
         
         if($setting->themes == 'portfolio'){
-        return view('front.themes.portfolio.index', compact('educations', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
+        return view('front.themes.portfolio.index', compact('educations','abouts','setting', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',  'sliders', 'pricingplans'));
         }
 
         if($setting->themes == 'agency'){
-            return view('front.themes.agency.index', compact('educations', 'experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',   'sliders', 'pricingplans'));
+            return view('front.themes.agency.index', compact('educations','abouts', 'setting','experinces', 'scategories', 'services', 'portfolios', 'funfacts', 'testimonials', 'blogs', 'clients', 'knowledges',   'sliders', 'pricingplans'));
         }
 
     }

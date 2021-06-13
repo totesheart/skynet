@@ -11,6 +11,8 @@ use App\Service;
 use App\About;
 use App\Scategory;
 use App\Funfact;
+use App\Setting;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -22,7 +24,8 @@ class DashboardController extends Controller
         $about = About::first();
         $scategories = Scategory::with('skills')->get();
         $funfacts = Funfact::orderBy('id', 'DESC')->get();
-
-        return view('admin.dashboard', compact('clients', 'portfolios', 'about', 'scategories', 'services_count', 'blogs_count', 'funfacts'));
+        $adminprofile = Auth::user();
+        $setting = Setting::first();
+        return view('admin.dashboard', compact('clients','setting','adminprofile' ,'portfolios', 'about', 'scategories', 'services_count', 'blogs_count', 'funfacts'));
     }
 }

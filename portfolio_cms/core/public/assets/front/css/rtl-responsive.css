@@ -1,0 +1,16 @@
+@media (max-width: 991px){
+    .header .nav-item .nav-link {
+        text-align: right;
+    }
+    .language{
+        float: right;
+    }
+    .language {
+        margin-right: 0px;
+    }
+    .lanwrapper{
+        left: 60px;
+        right: auto;
+        top: 11px;
+    }
+}
